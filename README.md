@@ -1,5 +1,5 @@
 # RandomPassGen
-Generate password on Android devices. You could choose the charactors to form the password.<br>
+Generate password on Android devices. You could choose which kind of the charactors to form the password.<br>
 1.Basic functions for password generation.<br>
 2.Support interface in English and Chinese.<br>
 
