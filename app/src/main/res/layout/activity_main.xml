@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/TextPassGen"
+                app:layout_constraintStart_toStartOf="@+id/editTextSpecialSymbols"
+                app:layout_constraintTop_toBottomOf="@+id/editTextSpecialSymbols" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextSpecialSymbols"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/buttonGenCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="onGenCopyClick"
+                android:text="@string/ButtonGenCopy"
+                app:layout_constraintBaseline_toBaselineOf="@+id/buttonGen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/buttonGen2" />
+
+            <Button
+                android:id="@+id/buttonGen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="onGenClick"
+                android:text="@string/ButtonGen"
+                app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+            <Button
+                android:id="@+id/buttonGen2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="onCopyClick"
+                android:text="@string/ButtonCopy"
+                app:layout_constraintBaseline_toBaselineOf="@+id/buttonGen"
+                app:layout_constraintStart_toEndOf="@+id/buttonGen" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/SettingPassLenth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:text="8"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:checked="true"
+                android:text="@string/SettingCapLetters"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextLength" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:checked="true"
+                android:text="@string/SettingLowLetters"
+                app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxCap"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxCap" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDigits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:checked="true"
+                android:text="@string/SettingDigits"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxCap"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxCap" />
+
+            <CheckBox
+                android:id="@+id/checkBoxConSymbols"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:checked="true"
+                android:text="@string/SettingConvSymbols"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxDigits"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxDigits" />
+
+
+
+                <EditText
+                    android:id="@+id/editTextConSymbols"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="@string/HintConvSymbols"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:text="@string/TextViewConventionalSymbols"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/checkBoxConSymbols"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBoxConSymbols" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSepSymbols"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/SettingsSpecialSymbols"
+                app:layout_constraintStart_toStartOf="@+id/editTextConSymbols"
+                app:layout_constraintTop_toBottomOf="@+id/editTextConSymbols" />
+
+            <EditText
+                android:id="@+id/editTextSpecialSymbols"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/HintSpecialSymbols"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:text="@string/TextViewSpecialSymbols"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxSepSymbols"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxSepSymbols" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Random PWD</string>
+    <string name="SettingPassLenth">Lenth</string>
+    <string name="SettingCapLetters">Capital Letters</string>
+    <string name="SettingLowLetters">Lower Letters</string>
+    <string name="SettingConvSymbols">Conventional Symbols</string>
+    <string name="SettingsSpecialSymbols">Special Symbols (Blank space)</string>
+    <string name="SettingDigits">Digits</string>
+    <string name="ButtonGenCopy">Generate and Copy</string>
+    <string name="ButtonGen">Generate</string>
+    <string name="HintLenth">The Lenth of the password</string>
+    <string name="HintConvSymbols">Conventional Symbols</string>
+    <string name="HintSpecialSymbols">Special Symbols (Blank space)</string>
+    <string name="TextViewConventionalSymbols"><![CDATA[~!@#$%^&*()_+-={}[];\':\",.<>?/`]]></string>
+    <string name="TextPassGen">Generated Password</string>
+    <string name="ButtonCopy">Copy</string>
+    <string name="TextViewSpecialSymbols"><![CDATA[\\ |]]></string>
+    <string name="SnackBarCopied">Copied to clipboard</string>
+</resources>
