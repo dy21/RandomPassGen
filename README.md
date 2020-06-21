@@ -3,7 +3,7 @@ Generate password on Android devices. You could choose the charactors to form th
 1.Basic functions for password generation.<br>
 2.Support interface in English and Chinese.<br>
 
-Download the apk file:![apk file 20200621](https://github.com/dy21/RandomPassGen/blob/master/app/release/app-release.apk)
+Download the apk file:![apk file 20200621](https://github.com/dy21/RandomPassGen/raw/master/app/release/app-release.apk)
 <br>
 ![image](https://github.com/dy21/RandomPassGen/blob/master/images/EnglishHMI20200621.png)
 ![image](https://github.com/dy21/RandomPassGen/blob/master/images/20200621211639.jpg)
