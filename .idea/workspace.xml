@@ -44,6 +44,9 @@
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dZ8dutO5nK0qMOykpxkxTVL1sM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
